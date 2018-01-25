@@ -30,4 +30,10 @@ class StringCalculatorTest {
         int result = stringCalculator.add("1,2");
         Assertions.assertEquals(3, result);
     }
+
+    @Test
+    void addNumbersInStringShouldReturn4() {
+        int result = stringCalculator.add("2,2");
+        Assertions.assertEquals(4, result);
+    }
 }

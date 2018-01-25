@@ -36,4 +36,16 @@ class StringCalculatorTest {
         int result = stringCalculator.add("2,2");
         Assertions.assertEquals(4, result);
     }
+
+    @Test
+    void addThreeNumbersInStringShouldReturn() {
+        int result = stringCalculator.add("1,20,3");
+        Assertions.assertEquals(24, result);
+    }
+
+    @Test
+    void addNullString() {
+        int result = stringCalculator.add(null);
+        Assertions.assertEquals(0, result);
+    }
 }

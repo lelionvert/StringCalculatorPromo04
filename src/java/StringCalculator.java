@@ -1,6 +1,6 @@
 public class StringCalculator {
     public int add(String input) {
-        if(input.length()<1){
+        if(input == null || input.length()<1){
             return 0;
         }
         String[] split = input.split(",");

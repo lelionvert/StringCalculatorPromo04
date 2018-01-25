@@ -1,6 +1,8 @@
+import java.util.Objects;
+
 public class StringCalculator {
     public int add(String input) {
-        if(input == null || input.length()<1){
+        if(Objects.isNull(input) || input.isEmpty()){
             return 0;
         }
         String[] split = input.split(",");
